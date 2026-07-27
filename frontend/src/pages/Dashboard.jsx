@@ -176,7 +176,13 @@ function Dashboard() {
           }}
           onConfirm={handleDelete}
         />
+
       </div>
+         <footer className="border-t bg-white py-4">
+    <div className="max-w-7xl mx-auto px-6 text-center text-sm text-gray-500">
+      Build for <span className="font-semibold text-blue-600">Digital Heroes Training Task</span>
+    </div>
+  </footer>
     </>
   );
 }
