@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "../components/Navbar";
 import { useState } from "react";
 import {
@@ -30,18 +29,6 @@ function Dashboard() {
   const [deleteLoading, setDeleteLoading] = useState(false);
   const [searchInput, setSearchInput] = useState("");
 
-  // const handleCreate = async (formData) => {
-  //    try {
-  //      await createLead(formData)
-  //      toast.success("Lead Screated Successfully")
-
-  //      fetchLeads()
-  //      setShowModal(false)
-  //    } catch (error) {
-  //     console.log(error);
-  //     toast.error(error.response?.data?.message || "Error while creating Lead")
-  //    }
-  // }
 
   const handleSubmit = async (formData) => {
     try {
@@ -65,7 +52,6 @@ function Dashboard() {
   const handleDelete = async () => {
     try {
       setDeleteLoading(true);
-      // console.log(selectedLead);
 
       await deleteLead(selectedLead._id);
 
@@ -84,7 +70,6 @@ function Dashboard() {
     try {
       setLoading(true);
       const { data } = await getLeads({ page, search });
-      // console.log(data);
 
       setLeads(data.leads);
       setTotalPages(data.totalPages);

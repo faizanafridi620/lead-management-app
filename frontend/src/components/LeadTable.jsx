@@ -1,19 +1,7 @@
-import React from 'react'
-import { deleteLead } from '../services/leadService'
 import { useNavigate } from 'react-router-dom';
 
 function LeadTable({ leads, onEdit, onDelete }) {
     const navigate = useNavigate()
-
-//      const handleDelete = async (id) => {
-
-//     if (!confirm("Delete this lead?")) return;
-
-//     await deleteLead(id);
-
-//     refresh();
-
-//   }
 
   return (
     <div className="overflow-x-auto rounded-xl border border-gray-200 shadow-sm">

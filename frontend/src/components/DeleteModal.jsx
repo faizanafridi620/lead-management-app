@@ -1,4 +1,3 @@
-import React from 'react'
 
 function DeleteModal({open, onClose, onConfirm, loading}) {
 
